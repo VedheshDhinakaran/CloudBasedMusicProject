@@ -1,0 +1,1098 @@
+[
+  {
+    "title": "Kanakambari Karunyamrita Lahari",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kanakAmbari",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Muraharena Mukundena",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha mukhAri",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ekamreshanayike Shive",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha sAvEri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Akhilandeshvaro Rakshatu",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha sAvEri",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Sri Dakshinamurtim Isham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "phEnadyuti",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Brihadishvaro Rakshatu Mam Hari",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "gAnasAmavarALi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Parameshvarena Palitosmyaham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "pUrvavarALi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Matsyavatara Mamava",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhinnapaHncamaM",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Guruguha Swamini Bhaktim Karomi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhanumati",
+    "tala": "khaNDa tripuTa",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Brihadamba Madamba Jayati",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhanumati",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Balambike Pahi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "manOraHnjani",
+    "tala": "caturashra maThyaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chidambara Natarajamurtim",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tanukIrTi",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Jnanambike Palaya Mam Sri",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "sEnAgraNi",
+    "tala": "tishra EkaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambike Ashrita Kalpalatike Chandike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "rUpakaM (2 kaLai)",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Dakshayani Abhayambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Mahaganapatim Vande",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Palayamam Brihadishvari Bhaktajanavana Shankari",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ramachandraya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Vedaranyeshvaraya Namaste Vinavadana",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Krishnam Bhaja Manasa Satatam Shritajana",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Subrahmanyo Mam Rakshatu",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "tODi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kumaraswaminam Guruguham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "*asAvEri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chandram Bhaja Manasa",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "*asAvEri",
+    "tala": "caturashra maThyaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ganalole Bale",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nAgavarALi",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ehi Annapurne Sannidhehi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "*punnAgavarALi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambikayastava Bhaktoham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "*punnAgavarALi",
+    "tala": "tishra EkaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Anandamritakarshini",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "amritavarshini",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "DIuRM7zQCrQ",
+      "title": "Anandamritakarshini | Vande Guru Paramparaam | Sri Muthuswami Dikshithar | Paavani Cotah",
+      "thumbnail": "https://i.ytimg.com/vi/DIuRM7zQCrQ/hqdefault.jpg",
+      "channelTitle": "Kuldeep M Pai"
+    }
+  },
+  {
+    "title": "Vatapi Ganapatim Bhaje",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "hamsadhvani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "XDcPvMFmtE8",
+      "title": "Vathapi Ganapathim I Sooryagayathri I Muthuswami Dikshitar",
+      "thumbnail": "https://i.ytimg.com/vi/XDcPvMFmtE8/hqdefault.jpg",
+      "channelTitle": "Strumm Spiritual"
+    }
+  },
+  {
+    "title": "Sri Subrahmanyaya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kambhoji",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Meenakshi Me Mudam Dehi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "gamakakriya",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Akilandeshwari Rakshamam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "dwijavanti",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "Ks8B4YUlnzs",
+      "title": "Akhilandeswari | Audio Song | M S Subbulakshmi | Radha Vishwanathan | Carnatic | Classical Music",
+      "thumbnail": "https://i.ytimg.com/vi/Ks8B4YUlnzs/hqdefault.jpg"
+    }
+  },
+  {
+    "title": "Chintaya Makanda",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhairavi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Rangapura Vihara",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "brindavana saranga",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Balagopala Palaya",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Saraswati Namostute",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "arabhi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Hiranmayim Lakshmim",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "lalita",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Kamalambikayam Bhaktim",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shankarabharanam",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Tyagaraja Yoga Vaibhavam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "anandabhairavi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambam Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "todi",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Neelotpalambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "narayanagaula",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ardhanarishvaram",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kumudakriya",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Annapurne Vishalakshi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "sama",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Vishwanatham Bhajeham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "chaturdasha ragamalika",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Swaminatha Paripalaya",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nattai",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Gajananayutam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "chakravakam",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Siddhi Vinayakam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shanmukhapriya",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Varalakshmi Namastubhyam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "sri",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Mahalakshmi Karunarasalahari",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "madhyamavati",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Nathadi Guruguho",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "mayamalavagowla",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Guruguha Tarayashu",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "padi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Balasubrahmanyam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bilahari",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Subrahmanyena Rakshitoham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha dhanyasi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Valli Devasena Sameta",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "natabhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Panchashat Peetha Rupini",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "karnataka devagandhari",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Rajagopala",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "saveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Venugopala",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kurinji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chetah Sri Balakrishnam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "dwijavanti",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Balakrishnam Bhavayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "gopikavasantam",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Parimala Ranganatham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "hamir kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ranganayakam Bhavayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nayaki",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Lakshmi Varaham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "abhogi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Varadarajam Upasmahe",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "saranga",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ananta Balakrishnam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "pantuvarali",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Krishnam Bhaja Manasa",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "todi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Rajarajeshwari Manohari",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "ragamalika",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Tripurasundari Jagadamba",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Soundararajam Ashraye",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "brindavana saranga",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Tyagarajaya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "begada",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Kalahasteesha",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "huseni",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chintaya Ma Kanda",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhairavi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Arunachalanatham Smarami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "saranga",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Annamalaiyaru",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "todi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ekambreshanayakam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shankarabharanam",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kanchadalayatakshi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kamalamanohari",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Neelakantham Bhajeham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kedaram",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kasi Vishwanatham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kamboji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Visalakshim Vishveshim",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kashiramakriya",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Kamalambikayam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalamba Navavarna",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "ragamalika",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Abhayamba Jagadamba",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "4WhDHjUoC3g",
+      "title": "Sri Mathrubhutam - Sri Kamalamba - Bombay S Jayashri (Full Verson)",
+      "thumbnail": "https://i.ytimg.com/vi/4WhDHjUoC3g/hqdefault.jpg"
+    }
+  },
+  {
+    "title": "Abhayamba Ninnuvina",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kedaram",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nilotpalambam Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nattaikurinji",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nilotpalambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kedaragaula",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chandram Bhaja Manasa",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "asaveri",
+    "tala": "matya",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Angarakam Ashrayamyaham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "surati",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Budham Ashrayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "natakuranji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Brihaspate Tarapathe",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "atana",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shukra Bhagavantam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "paras",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Divakara Tanujam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "yadukulakambhoji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Smaraamyaham Sadashivam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "ramamanohari",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chandram Bhaja Manasa (Navagraha)",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "asaveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Saraswati Namostute",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "arabhi",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Hamsadhvani Ganapatim",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "hamsadhvani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Mooladhara Chakraya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha saveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Swaminathaya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kambhoji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Guruguhaaya Bhaktanu Grahaya",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "sama",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Parvati Kumaram Bhajeham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "natakuranji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Subrahmanyaya Namaste",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kambhoji",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Venkatesham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "todi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Venkatesa Ninnu Sevimpa",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "madhyamavati",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Anandeshwarena Samrakshitoham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "anandabhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sadanandamayi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "hindolam",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Ramachandram Bhavayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "vasanta",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Mamava Pattabhirama",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "manirangu",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Rama Chandram Bhavayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "vasanta",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Ramam Ravikulabdhi Somam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "narayanagaula",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Suryamurte Namostute",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "saurashtram",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chandram Bhaja Manasa",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "asaveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Angarakam Ashrayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "surati",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Budham Ashrayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "natakuranji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Brihaspate Tarapathe",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "atana",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shukra Bhagavantam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "paras",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Divakara Tanujam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "yadukulakambhoji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shaneshcharam Bhajamyaham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "punnagavarali",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Rahu Graha Kriti",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "ramapriya",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ketu Graha Kriti",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "chamaram",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Parthasarathi",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "shuddha dhanyasi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Parthasarathim Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "yadukulakambhoji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Soundararajam Ashraye",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "brindavana saranga",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Sundararajam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ranganayakam Bhavayami",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nayaki",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sri Ranganatham Upasmahe",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "pantuvarali",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Chidambaram Natarajam",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kedaram",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ananda Natanaprakasham",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kedaram",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "Z5VgSjnEI6E",
+      "title": "Ananda Natana Prakasam | Sri. Vijay Siva | Lasya - The Culture Hub",
+      "thumbnail": "https://i.ytimg.com/vi/Z5VgSjnEI6E/hqdefault.jpg"
+    }
+  },
+  {
+    "title": "Sri Nilotpalambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "ritigowla",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nilotpalambam Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "nattaikurinji",
+    "tala": "rUpakaM",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambike",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "todi",
+    "tala": "mishra cApu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamalambam Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Abhayambam Bhajare",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Abhayamba Jagadamba",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "4WhDHjUoC3g",
+      "title": "Sri Mathrubhutam - Sri Kamalamba - Bombay S Jayashri (Full Verson)",
+      "thumbnail": "https://i.ytimg.com/vi/4WhDHjUoC3g/hqdefault.jpg"
+    }
+  },
+  {
+    "title": "Sri Guruguha Murte",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "udayaravichandrika",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Guruguha Swamini",
+    "composer": "Muthuswamy Dikshitar",
+    "raga": "bhanumati",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  }
+]

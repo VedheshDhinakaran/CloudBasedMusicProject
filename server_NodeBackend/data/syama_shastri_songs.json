@@ -1,0 +1,596 @@
+[
+  {
+    "title": "Adinamuninchi Pogadi",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Akhilandeshvari Durusuga",
+    "composer": "Syama Sastri",
+    "raga": "Karnataka Kapi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Birana Varalichi",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Tishra nadai Adi",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "CaYf10mKBJk",
+      "title": "30 Days 30 Composers - 3 - Biranavaralicchi - Kalyani - Rupaka - Syama Sastri",
+      "thumbnail": "https://i.ytimg.com/vi/CaYf10mKBJk/hqdefault.jpg",
+      "channelTitle": "NCS Ravali"
+    }
+  },
+  {
+    "title": "Brihannayaki Nannu",
+    "composer": "Syama Sastri",
+    "raga": "Madhyamavati",
+    "tala": "Tishra Mathya",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Brova Samayamide Devi",
+    "composer": "Syama Sastri",
+    "raga": "Punnagavarali",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Brova Vamma Bangaru",
+    "composer": "Syama Sastri",
+    "raga": "Nilambari",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": false,
+    "youtube": {
+      "videoId": "IuJK00JJytk",
+      "title": "Shyama Shastri Kriti-Brovavamma Bangaru- Nilambari- Triputa-Sugantha Kalamegam",
+      "thumbnail": "https://i.ytimg.com/vi/IuJK00JJytk/hqdefault.jpg",
+      "channelTitle": "Carnatic Ecstasy"
+    }
+  },
+  {
+    "title": "Brovavamma Tamasamelebirana",
+    "composer": "Syama Sastri",
+    "raga": "Manji",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Dayajuda Manchi",
+    "composer": "Syama Sastri",
+    "raga": "Jaganmohini",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Dayanidhe Mamava",
+    "composer": "Syama Sastri",
+    "raga": "Begada",
+    "tala": "Adi",
+    "type": "varnam",
+    "verified": true
+  },
+  {
+    "title": "Devi Brova Samayamide",
+    "composer": "Syama Sastri",
+    "raga": "Chintamani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Devi Meena Netri",
+    "composer": "Syama Sastri",
+    "raga": "Shankarabharana",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Devi Nannu Brovavamma",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Jhampa",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Devi Ni Padasarasamule",
+    "composer": "Syama Sastri",
+    "raga": "Kambhoji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Durusuga Kripajuchi",
+    "composer": "Syama Sastri",
+    "raga": "Saveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Emani Migula",
+    "composer": "Syama Sastri",
+    "raga": "Todi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Enneramum Un Namam",
+    "composer": "Syama Sastri",
+    "raga": "Purvikalyani",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Enneramum Un Padakamaladhyanam",
+    "composer": "Syama Sastri",
+    "raga": "Punnagavarali",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Himachalatanaya Brochutakidi",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Viloma Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Himadrisute Pahimam",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Tishra nadai Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Janani Natajanaparipalini",
+    "composer": "Syama Sastri",
+    "raga": "Saveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamakshi Anudinamu",
+    "composer": "Syama Sastri",
+    "raga": "Bhairavi",
+    "tala": "Mishra Chapu",
+    "type": "svarajati",
+    "verified": true
+  },
+  {
+    "title": "Kamakshi Bangaru",
+    "composer": "Syama Sastri",
+    "raga": "Varali",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Kamakshi Karunakatakshi",
+    "composer": "Syama Sastri",
+    "raga": "Pharaj",
+    "tala": "Triputa",
+    "type": "gitam",
+    "verified": false
+  },
+  {
+    "title": "Kamakshi Lokasakshini",
+    "composer": "Syama Sastri",
+    "raga": "Madhyamavati",
+    "tala": "Triputa",
+    "type": "gitam",
+    "verified": false
+  },
+  {
+    "title": "Kamakshi Nato Vada",
+    "composer": "Syama Sastri",
+    "raga": "Begada",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Kamakshi Ni Padayugamu",
+    "composer": "Syama Sastri",
+    "raga": "Yadukulakambhoji",
+    "tala": "Mishra Chapu",
+    "type": "svarajati",
+    "verified": true
+  },
+  {
+    "title": "Kanakashaila Viharini",
+    "composer": "Syama Sastri",
+    "raga": "Punnagavarali",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Karunajuda Ninnunammina",
+    "composer": "Syama Sastri",
+    "raga": "Sri",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Karunajudavamma Vinamma",
+    "composer": "Syama Sastri",
+    "raga": "Varali",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Karunanidhi Ilalo",
+    "composer": "Syama Sastri",
+    "raga": "Todi",
+    "tala": "Tishra gati Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Mahilo Amba",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Mari Ve Re Gati",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true,
+    "youtube": {
+      "videoId": "tBzhvjCF3nQ",
+      "title": "Marivere gati - Anandabhairavi",
+      "thumbnail": "https://i.ytimg.com/vi/tBzhvjCF3nQ/hqdefault.jpg",
+      "channelTitle": "Sanjay Subrahmanyan"
+    }
+  },
+  {
+    "title": "Mayamma Nannubrovavamma",
+    "composer": "Syama Sastri",
+    "raga": "Natakuranji",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Mayamma Yani Ne",
+    "composer": "Syama Sastri",
+    "raga": "Ahiri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Minalochana Brovayochana",
+    "composer": "Syama Sastri",
+    "raga": "Dhanyasi",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Namanavini Vinu",
+    "composer": "Syama Sastri",
+    "raga": "Saurashtra",
+    "tala": "Chaturashra Ata",
+    "type": "varnam",
+    "verified": false
+  },
+  {
+    "title": "Nannu Brovarada O Jagadamba",
+    "composer": "Syama Sastri",
+    "raga": "Janarahnjani",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nannu Brovarada Vegame Nivu",
+    "composer": "Syama Sastri",
+    "raga": "Gaulipantu",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nannu Brovu Lalita",
+    "composer": "Syama Sastri",
+    "raga": "Lalita",
+    "tala": "Mishra (Viloma) Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nannukaruninci",
+    "composer": "Syama Sastri",
+    "raga": "Shankarabharana",
+    "tala": "Rupaka",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nilayatakshi Nive",
+    "composer": "Syama Sastri",
+    "raga": "Pharaj",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ninne Namminanu",
+    "composer": "Syama Sastri",
+    "raga": "Todi",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ninne Nammiti",
+    "composer": "Syama Sastri",
+    "raga": "Kedaragaula",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Ninnuvina Marigalada",
+    "composer": "Syama Sastri",
+    "raga": "Abheri",
+    "tala": "Rupaka (Tishra nadai Adi)",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Ninnuvinaga Mari",
+    "composer": "Syama Sastri",
+    "raga": "Purvikalyani",
+    "tala": "Desadi, Mishra nadai",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Nive Gatiyani",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Tishra Mathya",
+    "type": "varnam",
+    "verified": false
+  },
+  {
+    "title": "O Jagadamba Nanu",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Pahi Mam Shri Rajarajeshvari",
+    "composer": "Syama Sastri",
+    "raga": "Nata",
+    "tala": "Rupaka",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Pahi Shri Girarajasute",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Rupaka",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Palayashu Mam Paradevate",
+    "composer": "Syama Sastri",
+    "raga": "Arabhi",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Palimpavamma Paramapavani",
+    "composer": "Syama Sastri",
+    "raga": "Mukhari",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Palinchu Kamakshi Pavani",
+    "composer": "Syama Sastri",
+    "raga": "Madhyamavati",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Parakela Nannu",
+    "composer": "Syama Sastri",
+    "raga": "Kedaragaula",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Paramukhamenamma Parvatiyamma",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Triputa",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Parvati Janani",
+    "composer": "Syama Sastri",
+    "raga": "Bhairavi",
+    "tala": "Khanda Mathya",
+    "type": "gitam",
+    "verified": false
+  },
+  {
+    "title": "Parvati Ninnu Ne",
+    "composer": "Syama Sastri",
+    "raga": "Kalgada",
+    "tala": "Tishra gati Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Puraharajaye Palaya Mam",
+    "composer": "Syama Sastri",
+    "raga": "Gaulipantu",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Rave Himagirikumari",
+    "composer": "Syama Sastri",
+    "raga": "Todi",
+    "tala": "Adi",
+    "type": "svarajati",
+    "verified": true
+  },
+  {
+    "title": "Rave Parvatarajakumari",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Jhampa",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Sami Ninne Nammitirara",
+    "composer": "Syama Sastri",
+    "raga": "Begada",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Samini Rammanave",
+    "composer": "Syama Sastri",
+    "raga": "Anandabhairavi",
+    "tala": "Ata",
+    "type": "varnam",
+    "verified": true
+  },
+  {
+    "title": "Santatam Ennai Rakshippai",
+    "composer": "Syama Sastri",
+    "raga": "Pharaj",
+    "tala": "Adi",
+    "type": "gitam",
+    "verified": false
+  },
+  {
+    "title": "Sarasakshi Sada",
+    "composer": "Syama Sastri",
+    "raga": "Saveri",
+    "tala": "Triputa",
+    "type": "gitam",
+    "verified": false
+  },
+  {
+    "title": "Sari Yevaramma",
+    "composer": "Syama Sastri",
+    "raga": "Bhairavi",
+    "tala": "Khanda Jhampa",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Sarojadalanetri Himagiriputri",
+    "composer": "Syama Sastri",
+    "raga": "Shankarabharana",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shankari Shamkaru Chandramukhi",
+    "composer": "Syama Sastri",
+    "raga": "Saveri",
+    "tala": "Tishra gati Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shankari Shankari",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Ata",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Shri Kamakshi Kavave",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": false
+  },
+  {
+    "title": "Shripatimukha Virachita",
+    "composer": "Syama Sastri",
+    "raga": "Saveri",
+    "tala": "Adi",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Talli Ninnu Nera",
+    "composer": "Syama Sastri",
+    "raga": "Kalyani",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Tarunamidamma Ennai Rakshikka",
+    "composer": "Syama Sastri",
+    "raga": "Gaulipantu",
+    "tala": "Chapu",
+    "type": "kriti",
+    "verified": true
+  },
+  {
+    "title": "Trilokamata Nannubrovu",
+    "composer": "Syama Sastri",
+    "raga": "Pharaj",
+    "tala": "Mishra Chapu",
+    "type": "kriti",
+    "verified": true
+  }
+]

@@ -31,13 +31,18 @@ function SongPage() {
         setCurrentSong(foundSong);
 
         const token = localStorage.getItem("token");
-        const favRes = await axios.get("http://localhost:5000/favorites", {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        const exists = favRes.data.some(
-          (fav) => fav.title === foundSong.title && fav.composer === foundSong.composer
-        );
-        setIsFavorite(exists);
+        if (token) {
+          const favRes = await axios.get("http://localhost:5000/favorites", {
+            headers: { Authorization: `Bearer ${token}` }
+          });
+          const exists = favRes.data.some((fav) => {
+            if (foundSong.genre === "pop") {
+              return fav.title === foundSong.title && fav.genre === "pop" && fav.artist === foundSong.artist;
+            }
+            return fav.title === foundSong.title && fav.genre !== "pop" && fav.composer === foundSong.composer;
+          });
+          setIsFavorite(exists);
+        }
 
         const recs = await axios.get(`http://localhost:5000/songs/recommend/${id}`);
         setRecommendations(recs.data);
@@ -55,7 +60,6 @@ function SongPage() {
         console.error("Could not fetch song", err);
       }
     };
-
     const fetchAI = async () => {
       setLoadingAI(true);
       try {
@@ -126,8 +130,11 @@ function SongPage() {
       await axios.post("http://localhost:5000/favorites", {
         songId: song._id,
         title: song.title,
-        raga: song.raga,
+        genre: song.genre || "carnatic",
+        artist: song.artist,
+        album: song.album,
         composer: song.composer,
+        raga: song.raga,
       }, {
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -141,7 +148,12 @@ function SongPage() {
     try {
       const token = localStorage.getItem("token");
       await axios.delete("http://localhost:5000/favorites", {
-        params: { title: song.title, composer: song.composer },
+        params: {
+          title: song.title,
+          genre: song.genre || "carnatic",
+          artist: song.artist,
+          composer: song.composer,
+        },
         headers: { Authorization: `Bearer ${token}` }
       });
       setIsFavorite(false);
@@ -150,12 +162,53 @@ function SongPage() {
     }
   };
 
+  const isPopSong = song.genre === "pop";
+  const durationText = song.duration || (song.durationMs ? `${Math.floor(song.durationMs / 1000)} sec` : null);
+  const metaItems = isPopSong
+    ? [
+        { label: "Artist", value: song.artist },
+        { label: "Album", value: song.album },
+        { label: "Year", value: song.year },
+        { label: "Language", value: song.language },
+      ]
+    : [
+        { label: "Raga", value: song.raga },
+        { label: "Tala", value: song.tala },
+        { label: "Composer", value: song.composer },
+        { label: "Type", value: song.type },
+      ];
+
   return (
     <div className="song-detail-page">
-      <h1>{song.title}</h1>
-      <p><span style={{ color: "var(--accent-secondary)" }}>Raga:</span> {song.raga}</p>
-      <p><span style={{ color: "var(--accent-secondary)" }}>Tala:</span> {song.tala}</p>
-      <p><span style={{ color: "var(--accent-secondary)" }}>Composer:</span> {song.composer}</p>
+      <div className="song-detail-header">
+        <div>
+          <h1>{song.title}</h1>
+          <div className="song-tags">
+            {song.genre && <span className="song-badge">{song.genre.toUpperCase()}</span>}
+            {song.language && <span className="song-badge">{song.language}</span>}
+            {isPopSong && song.mood && <span className="song-badge">{song.mood}</span>}
+          </div>
+          <p className="song-summary">{song.description || "Enjoy the full details, AI insights, and related songs for this track."}</p>
+        </div>
+      </div>
+
+      <div className="song-meta-grid">
+        {metaItems.map((item) => (
+          item.value ? (
+            <div key={item.label} className="song-meta-card">
+              <strong>{item.label}</strong>
+              <span>{item.value}</span>
+            </div>
+          ) : null
+        ))}
+
+        {durationText && (
+          <div className="song-meta-card">
+            <strong>Duration</strong>
+            <span>{durationText}</span>
+          </div>
+        )}
+      </div>
 
       <div className="song-actions">
         <button className="play-btn" onClick={playSong} title="Play">
@@ -193,24 +246,7 @@ function SongPage() {
             <path d="M12 5v14M5 12h14" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
-        <button
-          onClick={() => setShowPlaylistModal(true)}
-          style={{
-            display: "flex", alignItems: "center", gap: "8px", padding: "8px 16px", 
-            backgroundColor: "rgba(255,255,255,0.05)", color: "var(--accent-secondary)", 
-            border: "1px solid var(--accent-secondary)", borderRadius: "20px", cursor: "pointer", 
-            fontSize: "14px", fontWeight: "bold", marginLeft: "10px", transition: "0.2s"
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "var(--accent-secondary)";
-            e.currentTarget.style.color = "white";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)";
-            e.currentTarget.style.color = "var(--accent-secondary)";
-          }}
-          title="Add to Playlist"
-        >
+        <button className="playlist-btn" onClick={() => setShowPlaylistModal(true)} title="Add to Playlist">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 5v14M5 12h14" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
@@ -266,24 +302,11 @@ function SongPage() {
           <p>{activeVideo.title}</p>
           <img src={activeVideo.thumbnail} alt="yt thumbnail" style={{ maxWidth: "160px", marginTop: "8px" }} />
         </div>
-      ) : audioUrl ? (
-        <audio
-          ref={audioRef}
-          controls
-          src={audioUrl}
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
-          onEnded={() => setIsPlaying(false)}
-        />
-      ) : (
-        <p>Audio preview not available for this song.</p>
-      )}
+      ) : null}
 
-      <p>Duration: {song.durationMs ? Math.floor(song.durationMs / 1000) + " sec" : "Unknown"}</p>
-      <p>Type: {song.type || "unknown"}</p>
       {song.releases && song.releases.length > 0 && (
-        <div>
-          <p>Releases:</p>
+        <div className="song-releases-card">
+          <p className="song-releases-title">Releases</p>
           <ul>
             {song.releases.map((r) => (
               <li key={r.id || r.title}>{r.title || r.id}</li>
@@ -291,8 +314,6 @@ function SongPage() {
           </ul>
         </div>
       )}
-
-
 
       <h2>Recommended Songs</h2>
       <div className="grid">

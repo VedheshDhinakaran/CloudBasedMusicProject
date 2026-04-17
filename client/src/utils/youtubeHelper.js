@@ -12,7 +12,9 @@ export const findBestYoutubeVideo = async (song) => {
         songId: song._id || song.id,
         title: song.title,
         raga: song.raga || "",
-        composer: song.composer || ""
+        composer: song.composer || "",
+        artist: song.artist || "",
+        album: song.album || ""
       }
     });
 

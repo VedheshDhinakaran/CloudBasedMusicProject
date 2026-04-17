@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 
-import Home from "./pages/Home";
+import GenreSelectionPage from "./pages/GenreSelectionPage";
+import CarnaticPage from "./pages/Home";
+import PopPage from "./pages/PopPage";
 import ComposerPage from "./pages/ComposerPage";
 import Favorites from "./pages/Favorites";
 import SongPage from "./pages/SongPage";
@@ -27,7 +29,9 @@ function App() {
               <Route path="/profile-setup" element={<ProfileSetup />} />
               
               {/* 🔒 Protected Routes */}
-              <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+              <Route path="/" element={<ProtectedRoute><GenreSelectionPage /></ProtectedRoute>} />
+              <Route path="/carnatic" element={<ProtectedRoute><CarnaticPage /></ProtectedRoute>} />
+              <Route path="/pop" element={<ProtectedRoute><PopPage /></ProtectedRoute>} />
               <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
               <Route path="/composer/:name" element={<ProtectedRoute><ComposerPage /></ProtectedRoute>} />
               <Route path="/favorites" element={<ProtectedRoute><Favorites /></ProtectedRoute>} />

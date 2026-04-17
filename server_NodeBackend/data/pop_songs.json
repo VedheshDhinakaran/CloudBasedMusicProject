@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "album": "After Hours",
+    "genre": "pop",
+    "year": 2019,
+    "duration": "3:20",
+    "language": "English",
+    "mood": "energetic",
+    "category": "Pop Hits"
+  },
+  {
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "album": "Future Nostalgia",
+    "genre": "pop",
+    "year": 2020,
+    "duration": "3:23",
+    "language": "English",
+    "mood": "feel-good",
+    "category": "Dance Pop"
+  },
+  {
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "album": "Fine Line",
+    "genre": "pop",
+    "year": 2019,
+    "duration": "2:54",
+    "language": "English",
+    "mood": "sunny",
+    "category": "Summer Pop"
+  }
+]

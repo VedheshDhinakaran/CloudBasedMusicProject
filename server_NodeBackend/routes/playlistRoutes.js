@@ -53,12 +53,15 @@ router.post("/:id/songs", async (req, res) => {
     if (!playlist) return res.status(404).json({ message: "Not found" });
     
     const song = req.body;
-    const existing = playlist.songs.find(s => 
-      (s._id && s._id === song._id) || 
-      (s.songId && s.songId === song.songId) || 
-      (s.mbid && s.mbid === song.mbid) || 
-      (s.title === song.title && s.composer === song.composer)
-    );
+    const existing = playlist.songs.find((s) => {
+      if (s._id && s._id === song._id) return true;
+      if (s.songId && s.songId === song.songId) return true;
+      if (s.mbid && s.mbid === song.mbid) return true;
+      if (song.genre === "pop") {
+        return s.title === song.title && s.genre === "pop" && s.artist === song.artist;
+      }
+      return s.title === song.title && s.genre !== "pop" && s.composer === song.composer;
+    });
     if (!existing) {
       playlist.songs.push(song);
       await playlist.save();

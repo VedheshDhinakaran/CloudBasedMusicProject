@@ -17,7 +17,7 @@ function Sidebar() {
             <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
-        <h2>Carnatic</h2>
+        <h2>Genres</h2>
       </div>
 
       <ul className="nav-links">
@@ -29,7 +29,27 @@ function Sidebar() {
           <svg width="22" height="22" viewBox="0 0 24 24" fill={location.pathname === '/' ? "var(--accent-bright)" : "currentColor"}>
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
           </svg>
-          <span style={{ color: location.pathname === '/' ? "white" : "inherit" }}>Home</span>
+          <span style={{ color: location.pathname === '/' ? "white" : "inherit" }}>Genres</span>
+        </li>
+        <li 
+          className={`sidebar-link ${location.pathname === '/carnatic' ? 'active-nav' : ''}`} 
+          onClick={() => navigate("/carnatic")} 
+          style={{ cursor: "pointer" }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill={location.pathname === '/carnatic' ? "var(--accent-bright)" : "currentColor"}>
+            <path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z" />
+          </svg>
+          <span style={{ color: location.pathname === '/carnatic' ? "white" : "inherit" }}>Carnatic</span>
+        </li>
+        <li 
+          className={`sidebar-link ${location.pathname === '/pop' ? 'active-nav' : ''}`} 
+          onClick={() => navigate("/pop")} 
+          style={{ cursor: "pointer" }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill={location.pathname === '/pop' ? "var(--accent-bright)" : "currentColor"}>
+            <path d="M12 2 2 7l10 5 10-5-10-5zm0 9-10-5v11l10 5 10-5V6l-10 5z" />
+          </svg>
+          <span style={{ color: location.pathname === '/pop' ? "white" : "inherit" }}>Pop</span>
         </li>
         <li 
           className={`sidebar-link ${location.pathname === '/search' ? 'active-nav' : ''}`} 

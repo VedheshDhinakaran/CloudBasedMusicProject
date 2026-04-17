@@ -15,29 +15,30 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
 
   // ✅ Check favorite status
   useEffect(() => {
-  const checkFavorite = async () => {
-    try {
-      const token = localStorage.getItem("token");
-      if (!token) return;
+    const checkFavorite = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        if (!token) return;
 
-      const res = await axios.get("http://localhost:5000/favorites", {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+        const res = await axios.get("http://localhost:5000/favorites", {
+          headers: { Authorization: `Bearer ${token}` }
+        });
 
-      const exists = res.data.some(
-        (fav) =>
-          fav.title === song.title &&
-          fav.composer === song.composer
-      );
+        const exists = res.data.some((fav) => {
+          if (song.genre === "pop") {
+            return fav.title === song.title && fav.genre === "pop" && fav.artist === song.artist;
+          }
+          return fav.title === song.title && fav.genre !== "pop" && fav.composer === song.composer;
+        });
 
-      setIsFavorite(exists);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+        setIsFavorite(exists);
+      } catch (err) {
+        console.error(err);
+      }
+    };
 
-  checkFavorite();
-}, [song]);
+    checkFavorite();
+  }, [song]);
 
   // ❤️ ADD
   const addToFavorites = async () => {
@@ -46,8 +47,11 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
       const res = await axios.post("http://localhost:5000/favorites", {
         songId: song.songId || song._id,
         title: song.title,
-        raga: song.raga,
+        genre: song.genre || "carnatic",
+        artist: song.artist,
+        album: song.album,
         composer: song.composer,
+        raga: song.raga,
         youtube: song.youtube // Pass along the cached youtube link if available
       }, {
         headers: { Authorization: `Bearer ${token}` }
@@ -66,6 +70,8 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
       await axios.delete("http://localhost:5000/favorites", {
         params: {
           title: song.title,
+          genre: song.genre || "carnatic",
+          artist: song.artist,
           composer: song.composer,
         },
         headers: { Authorization: `Bearer ${token}` }
@@ -152,7 +158,11 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
 
       <div className="song-card-content">
           <h3>{song.title}</h3>
-          <p>{song.raga} • {song.composer}</p>
+          <p>
+            {song.genre === "pop"
+              ? `${song.artist || "Unknown Artist"} • ${song.album || "Pop"}`
+              : `${song.raga || "Unknown Raga"} • ${song.composer || "Carnatic"}`}
+          </p>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const CLOUD_FALLBACKS = [
 
 router.get("/search", async (req, res) => {
   try {
-    const { songId, title, composer, raga } = req.query;
+    const { songId, title, composer, raga, artist, album } = req.query;
 
     if (!title) return res.status(400).json({ error: "title is required" });
 
@@ -66,7 +66,7 @@ router.get("/search", async (req, res) => {
     let bestVideo = null;
 
     try {
-        const searchQuery = `${title} ${raga || ""} ${composer || ""}`.trim();
+        const searchQuery = `${title} ${raga || ""} ${composer || artist || ""} ${album || ""}`.trim();
         console.log("⚡ YouTube API Search (no cache):", searchQuery);
 
         const response = await axios.get("https://www.googleapis.com/youtube/v3/search", {

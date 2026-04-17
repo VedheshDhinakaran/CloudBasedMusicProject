@@ -17,25 +17,29 @@ router.get("/", auth, async (req, res) => {
 // ✅ ADD favorite
 router.post("/", auth, async (req, res) => {
   try {
-    const { title, composer, youtube } = req.body;
-    
-    // Deduplication per user
-    const existingFav = await Favorite.findOne({ 
-        userId: req.user.userId, 
-        title, 
-        composer 
-    });
+    const { title, genre, composer, artist } = req.body;
+    const favoriteQuery = {
+      userId: req.user.userId,
+      title,
+      genre: genre || "carnatic"
+    };
 
+    if (genre === "pop") {
+      favoriteQuery.artist = artist;
+    } else {
+      favoriteQuery.composer = composer;
+    }
+
+    const existingFav = await Favorite.findOne(favoriteQuery);
     if (existingFav) {
       return res.status(400).json({ error: "Song already in favorites" });
     }
 
     const fav = new Favorite({
-        ...req.body,
-        youtube, // Explicitly include youtube data if provided
-        userId: req.user.userId
+      ...req.body,
+      userId: req.user.userId
     });
-    
+
     await fav.save();
     res.json(fav);
   } catch (err) {
@@ -45,17 +49,23 @@ router.post("/", auth, async (req, res) => {
 });
 
 
-// ❌ REMOVE using title + composer
+// ✅ REMOVE favorite by genre-aware identifier
 router.delete("/", auth, async (req, res) => {
   try {
-    const { title, composer } = req.query;
-
-    await Favorite.findOneAndDelete({
+    const { title, genre, composer, artist } = req.query;
+    const deleteQuery = {
       userId: req.user.userId,
-      title: title,
-      composer: composer,
-    });
+      title,
+      genre: genre || "carnatic"
+    };
 
+    if (genre === "pop") {
+      deleteQuery.artist = artist;
+    } else {
+      deleteQuery.composer = composer;
+    }
+
+    await Favorite.findOneAndDelete(deleteQuery);
     res.json({ message: "Removed" });
   } catch (err) {
     console.error("Delete Favorite Error:", err.message);

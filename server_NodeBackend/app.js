@@ -9,12 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 // ✅ connect DB
-mongoose.connect("mongodb+srv://vedheshdv_db_user:lscx0iV2I3UjkkJR@cluster0.hvlhozc.mongodb.net/carnaticDB?retryWrites=true&w=majority")
+const mongoUri = process.env.MONGO_URI || "mongodb://localhost:27017/carnaticDB";
+mongoose.connect(mongoUri)
   .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+  .catch(err => console.log("MongoDB Connection Error:", err.message));
 
 // ✅ import routes AFTER app is created
 const songRoutes = require("./routes/songRoutes");
+const popSongRoutes = require("./routes/popSongRoutes");
 const favoriteRoutes = require("./routes/favoriteRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 const queueRoutes = require("./routes/queueRoutes");
@@ -25,6 +27,7 @@ const authRoutes = require("./routes/authRoutes");
 
 // ✅ use routes
 app.use("/songs", songRoutes);
+app.use("/pop-songs", popSongRoutes);
 app.use("/favorites", favoriteRoutes);
 app.use("/api/ai", aiRoutes);
 app.use("/queue", queueRoutes);

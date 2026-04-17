@@ -1,47 +1,50 @@
-const mongoose = require("mongoose");
+﻿const mongoose = require("mongoose");
 const fs = require("fs");
 const path = require("path");
-const Song = require("./models/Song");
+const Song = require("../models/Song");
 
-const MONGO_URI = "mongodb+srv://vedheshdv_db_user:lscx0iV2I3UjkkJR@cluster0.hvlhozc.mongodb.net/carnaticDB?retryWrites=true&w=majority";
+require("dotenv").config({ path: path.join(__dirname, "../.env") });
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/carnaticDB";
 
 async function importData() {
   try {
     await mongoose.connect(MONGO_URI);
     console.log("MongoDB Connected");
 
-    // 📂 Read both files
-    const syamaPath = path.join(__dirname, "data", "syama_shastri_songs.json");
-    const dikshitarPath = path.join(__dirname, "data", "muthuswamy_dikshitar_songs.json");
+    const syamaPath = path.join(__dirname, "syama_shastri_songs.json");
+    const dikshitarPath = path.join(__dirname, "muthuswamy_dikshitar_songs.json");
+    const popPath = path.join(__dirname, "pop_songs.json");
 
     const syamaData = JSON.parse(fs.readFileSync(syamaPath, "utf-8"));
     const dikshitarData = JSON.parse(fs.readFileSync(dikshitarPath, "utf-8"));
+    const popData = fs.existsSync(popPath) ? JSON.parse(fs.readFileSync(popPath, "utf-8")) : [];
 
-    // 🎼 Inject composer
-    const syamaWithComposer = syamaData.map(song => ({
+    const syamaWithComposer = syamaData.map((song) => ({
       ...song,
-      composer: "Syama Sastri"
+      composer: "Syama Sastri",
+      genre: "carnatic"
     }));
 
-    const dikshitarWithComposer = dikshitarData.map(song => ({
+    const dikshitarWithComposer = dikshitarData.map((song) => ({
       ...song,
-      composer: "Muthuswami Dikshitar"
+      composer: song.composer || "Muthuswami Dikshitar",
+      genre: "carnatic"
     }));
 
-    // 🔥 Combine both
-    const allSongs = [...syamaData, ...dikshitarData];
+    const popSongs = popData.map((song) => ({
+      ...song,
+      genre: "pop"
+    }));
 
-    // 🧹 Clear old data
     await Song.deleteMany();
     console.log("Old data cleared");
 
-    // ✅ Insert all
+    const allSongs = [...syamaWithComposer, ...dikshitarWithComposer, ...popSongs];
     await Song.insertMany(allSongs);
 
-    console.log("All songs imported successfully");
-
+    console.log(`Imported ${allSongs.length} songs into MongoDB.`);
     await mongoose.connection.close();
-    process.exit();
+    process.exit(0);
   } catch (err) {
     console.error(err);
     process.exit(1);
@@ -49,3 +52,4 @@ async function importData() {
 }
 
 importData();
+

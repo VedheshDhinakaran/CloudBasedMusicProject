@@ -249,7 +249,12 @@
     "raga": "gamakakriya",
     "tala": "Adi",
     "type": "kriti",
-    "verified": true
+    "verified": true,
+    "youtube": {
+      "videoId": "pipcLKrEYrM",
+      "title": "mInAkshi mE mudam dEhi - gamakakriya - adi - muddusvami dikshitar",
+      "thumbnail": "https://i.ytimg.com/vi/pipcLKrEYrM/hqdefault.jpg"
+    }
   },
   {
     "title": "Akilandeshwari Rakshamam",

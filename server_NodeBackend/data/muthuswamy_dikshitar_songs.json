@@ -1016,7 +1016,13 @@
     "raga": "kedaram",
     "tala": "Adi",
     "type": "kriti",
-    "verified": true
+    "verified": true,
+    "youtube": {
+      "videoId": "FBU1C5y2YtM",
+      "title": "Chidambara Natarajam - Kedaram - Adi - Muthuswamy Dikshitar",
+      "thumbnail": "https://i.ytimg.com/vi/FBU1C5y2YtM/hqdefault.jpg",
+      "channelTitle": "jyeshtamusic"
+    }
   },
   {
     "title": "Ananda Natanaprakasham",

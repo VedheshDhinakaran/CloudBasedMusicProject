@@ -1,9 +1,10 @@
 import { useContext, useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PlayerContext } from "../context/PlayerContext";
+import { findBestYoutubeVideo } from "../utils/youtubeHelper";
 
 function Player() {
-  const { currentSong, currentVideo, playNext, isPlaying, setIsPlaying } = useContext(PlayerContext);
+  const { currentSong, currentVideo, playNext, isPlaying, setIsPlaying, setCurrentVideo } = useContext(PlayerContext);
   const audioRef = useRef(null);
   const navigate = useNavigate();
   const [progress, setProgress] = useState(0);
@@ -12,18 +13,34 @@ function Player() {
 
   useEffect(() => {
     if (audioRef.current && currentSong && currentSong.audio) {
+      audioRef.current.src = currentSong.audio;
+      audioRef.current.load(); // Reload the audio element with new src
       if (isPlaying) {
         audioRef.current.play()
           .catch(() => setIsPlaying(false));
       } else {
         audioRef.current.pause();
       }
+    } else if (audioRef.current && currentSong && !currentSong.audio) {
+      // If no audio, pause
+      audioRef.current.pause();
+      setIsPlaying(false);
     }
-  }, [currentSong, isPlaying]);
+  }, [currentSong]);
 
-  // Reset video visibility when song changes
+  // Fetch YouTube video when currentSong changes
   useEffect(() => {
-    setShowVideo(false);
+    const fetchVideo = async () => {
+      if (currentSong) {
+        try {
+          const video = await findBestYoutubeVideo(currentSong);
+          setCurrentVideo(video);
+        } catch (err) {
+          console.error("Failed to fetch YouTube video", err);
+        }
+      }
+    };
+    fetchVideo();
   }, [currentSong]);
 
   const togglePlay = () => {
@@ -155,4 +172,4 @@ function Player() {
   );
 }
 
-export default Player;
+export default Player;

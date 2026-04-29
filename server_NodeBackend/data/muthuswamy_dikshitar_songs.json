@@ -699,14 +699,6 @@
     "verified": true
   },
   {
-    "title": "Chandram Bhaja Manasa",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "asaveri",
-    "tala": "matya",
-    "type": "kriti",
-    "verified": true
-  },
-  {
     "title": "Angarakam Ashrayamyaham",
     "composer": "Muthuswamy Dikshitar",
     "raga": "surati",
@@ -759,14 +751,6 @@
     "composer": "Muthuswamy Dikshitar",
     "raga": "asaveri",
     "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Sri Saraswati Namostute",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "arabhi",
-    "tala": "rUpakaM",
     "type": "kriti",
     "verified": true
   },
@@ -891,50 +875,10 @@
     "verified": true
   },
   {
-    "title": "Chandram Bhaja Manasa",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "asaveri",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
     "title": "Angarakam Ashrayami",
     "composer": "Muthuswamy Dikshitar",
     "raga": "surati",
     "tala": "rUpakaM",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Budham Ashrayami",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "natakuranji",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Brihaspate Tarapathe",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "atana",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Shukra Bhagavantam",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "paras",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Divakara Tanujam",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "yadukulakambhoji",
-    "tala": "Adi",
     "type": "kriti",
     "verified": true
   },
@@ -979,25 +923,9 @@
     "verified": true
   },
   {
-    "title": "Soundararajam Ashraye",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "brindavana saranga",
-    "tala": "rUpakaM",
-    "type": "kriti",
-    "verified": true
-  },
-  {
     "title": "Sri Sundararajam",
     "composer": "Muthuswamy Dikshitar",
     "raga": "kalyani",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Ranganayakam Bhavayami",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "nayaki",
     "tala": "Adi",
     "type": "kriti",
     "verified": true
@@ -1046,49 +974,12 @@
     "verified": true
   },
   {
-    "title": "Nilotpalambam Bhajare",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "nattaikurinji",
-    "tala": "rUpakaM",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Kamalambike",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "todi",
-    "tala": "mishra cApu",
-    "type": "kriti",
-    "verified": true
-  },
-  {
-    "title": "Kamalambam Bhajare",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "kalyani",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true
-  },
-  {
     "title": "Abhayambam Bhajare",
     "composer": "Muthuswamy Dikshitar",
     "raga": "kalyani",
     "tala": "Adi",
     "type": "kriti",
     "verified": true
-  },
-  {
-    "title": "Abhayamba Jagadamba",
-    "composer": "Muthuswamy Dikshitar",
-    "raga": "kalyani",
-    "tala": "Adi",
-    "type": "kriti",
-    "verified": true,
-    "youtube": {
-      "videoId": "4WhDHjUoC3g",
-      "title": "Sri Mathrubhutam - Sri Kamalamba - Bombay S Jayashri (Full Verson)",
-      "thumbnail": "https://i.ytimg.com/vi/4WhDHjUoC3g/hqdefault.jpg"
-    }
   },
   {
     "title": "Sri Guruguha Murte",

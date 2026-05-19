@@ -15,7 +15,7 @@ function ComposerPage() {
           ? "Muthuswamy Dikshitar"
           : "Syama Sastri";
 
-      const url = `http://localhost:5000/songs?composer=${composerName}${
+      const url = `/songs?composer=${composerName}${
         query ? "&" + query.substring(1) : ""
       }`;
 

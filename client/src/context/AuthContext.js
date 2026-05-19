@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
 
   const updateProfile = async (profileData) => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/profile", {
+      const res = await axios.post("/auth/profile", {
         userId: user.userId || user._id,
         ...profileData
       });

@@ -8,7 +8,7 @@ function AddToPlaylistModal({ song, onClose }) {
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/playlists");
+        const res = await axios.get("/playlists");
         setPlaylists(res.data);
       } catch (err) {
         console.error(err);
@@ -26,7 +26,7 @@ function AddToPlaylistModal({ song, onClose }) {
          ...song,
          songId: song.songId || song._id || song.mbid
       };
-      await axios.post(`http://localhost:5000/playlists/${playlistId}/songs`, payload);
+      await axios.post(`/playlists/${playlistId}/songs`, payload);
       alert("Added to playlist!");
       onClose();
     } catch (err) {

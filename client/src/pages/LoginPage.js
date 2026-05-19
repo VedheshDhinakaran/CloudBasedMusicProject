@@ -16,7 +16,7 @@ function LoginPage() {
     setError("");
     const endpoint = isLogin ? "/auth/login" : "/auth/signup";
     try {
-      const res = await axios.post(`http://localhost:5000${endpoint}`, { email, password });
+      const res = await axios.post(`${endpoint}`, { email, password });
       login(res.data);
       if (!isLogin) {
         navigate("/profile-setup");

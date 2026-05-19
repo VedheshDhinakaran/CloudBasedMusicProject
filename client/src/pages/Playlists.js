@@ -9,7 +9,7 @@ function Playlists() {
 
   const fetchPlaylists = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/playlists");
+      const res = await axios.get("/playlists");
       setPlaylists(res.data);
     } catch (err) {
       console.error(err);
@@ -24,7 +24,7 @@ function Playlists() {
     e.preventDefault();
     if (!newPlaylistName.trim()) return;
     try {
-      await axios.post("http://localhost:5000/playlists", { name: newPlaylistName });
+      await axios.post("/playlists", { name: newPlaylistName });
       setNewPlaylistName("");
       fetchPlaylists();
     } catch (err) {
@@ -37,7 +37,7 @@ function Playlists() {
     e.stopPropagation();
     if (!window.confirm("Delete this playlist?")) return;
     try {
-      await axios.delete(`http://localhost:5000/playlists/${id}`);
+      await axios.delete(`/playlists/${id}`);
       fetchPlaylists();
     } catch (err) {
       console.error("Failed to delete", err);
@@ -50,7 +50,7 @@ function Playlists() {
     if (!newName || newName.trim() === "" || newName === currentName) return;
 
     try {
-      await axios.put(`http://localhost:5000/playlists/${id}`, { name: newName });
+      await axios.put(`/playlists/${id}`, { name: newName });
       fetchPlaylists();
     } catch (err) {
       console.error("Failed to rename", err);

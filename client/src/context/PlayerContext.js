@@ -14,7 +14,7 @@ export function PlayerProvider({ children }) {
   useEffect(() => {
     const fetchQueue = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/queue");
+        const res = await axios.get("/queue");
         if (res.data) {
           setQueue(res.data.songs || []);
           setCurrentQueueIndex(res.data.currentQueueIndex !== undefined ? res.data.currentQueueIndex : -1);
@@ -33,7 +33,7 @@ export function PlayerProvider({ children }) {
 
   useEffect(() => {
     if (isQueueLoaded) {
-      axios.post("http://localhost:5000/queue", {
+      axios.post("/queue", {
         queue,
         currentQueueIndex
       }).catch(err => console.error("Failed to save queue", err));

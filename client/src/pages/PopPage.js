@@ -24,7 +24,7 @@ function PopPage() {
   useEffect(() => {
     const fetchPopSongs = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/pop-songs");
+        const res = await axios.get("/pop-songs");
         setSongs(res.data);
         setFilteredSongs(res.data);
         setArtists([...new Set(res.data.map((song) => song.artist).filter(Boolean))]);

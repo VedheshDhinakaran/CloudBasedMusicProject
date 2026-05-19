@@ -12,7 +12,7 @@ function PlaylistPage() {
 
   const fetchPlaylist = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/playlists/${id}`);
+      const res = await axios.get(`/playlists/${id}`);
       setPlaylist(res.data);
     } catch (err) {
       console.error("Failed to fetch playlist", err);
@@ -25,7 +25,7 @@ function PlaylistPage() {
 
   const handleRemoveSong = async (songId) => {
     try {
-      await axios.delete(`http://localhost:5000/playlists/${id}/songs/${songId}`);
+      await axios.delete(`/playlists/${id}/songs/${songId}`);
       fetchPlaylist();
     } catch (err) {
       console.error("Failed to remove song", err);

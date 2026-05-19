@@ -25,14 +25,14 @@ function SongPage() {
   useEffect(() => {
     const fetchSong = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/songs/${id}`);
+        const res = await axios.get(`/songs/${id}`);
         const foundSong = res.data;
         setSong(foundSong);
         setCurrentSong(foundSong);
 
         const token = localStorage.getItem("token");
         if (token) {
-          const favRes = await axios.get("http://localhost:5000/favorites", {
+          const favRes = await axios.get("/favorites", {
             headers: { Authorization: `Bearer ${token}` }
           });
           const exists = favRes.data.some((fav) => {
@@ -44,7 +44,7 @@ function SongPage() {
           setIsFavorite(exists);
         }
 
-        const recs = await axios.get(`http://localhost:5000/songs/recommend/${id}`);
+        const recs = await axios.get(`/songs/recommend/${id}`);
         setRecommendations(recs.data);
 
         // only load YouTube if not already loaded for this song
@@ -63,7 +63,7 @@ function SongPage() {
     const fetchAI = async () => {
       setLoadingAI(true);
       try {
-        const res = await axios.get(`http://localhost:5000/api/ai/insights/${id}`);
+        const res = await axios.get(`/api/ai/insights/${id}`);
         setAiInsights(res.data);
       } catch (err) {
         console.error("AI Insights failed", err);
@@ -112,7 +112,7 @@ function SongPage() {
     }
 
     try {
-      await axios.post("http://localhost:5000/search", {
+      await axios.post("/search", {
         songId: song._id || song.mbid,
         title: song.title,
         composer: song.composer,
@@ -127,7 +127,7 @@ function SongPage() {
   const addToFavorites = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.post("http://localhost:5000/favorites", {
+      await axios.post("/favorites", {
         songId: song._id,
         title: song.title,
         genre: song.genre || "carnatic",
@@ -147,7 +147,7 @@ function SongPage() {
   const removeFromFavorites = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete("http://localhost:5000/favorites", {
+      await axios.delete("/favorites", {
         params: {
           title: song.title,
           genre: song.genre || "carnatic",

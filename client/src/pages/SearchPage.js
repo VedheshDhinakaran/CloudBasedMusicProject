@@ -13,7 +13,7 @@ function SearchPage() {
 
   const refreshHistory = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/search");
+      const res = await axios.get("/search");
       setRecent(res.data);
     } catch (err) {
       console.error(err);
@@ -35,7 +35,7 @@ function SearchPage() {
     }
 
     try {
-      const localRes = await axios.get(`http://localhost:5000/songs?title=${encodeURIComponent(q)}`);
+      const localRes = await axios.get(`/songs?title=${encodeURIComponent(q)}`);
 
       if (localRes.data && localRes.data.length > 0) {
         setSongs(localRes.data);
@@ -53,7 +53,7 @@ function SearchPage() {
     setCurrentSong(item);
 
     try {
-      await axios.post("http://localhost:5000/search", {
+      await axios.post("/search", {
         songId: item.songId || item._id,
         title: item.title,
         composer: item.composer,
@@ -118,7 +118,7 @@ function SearchPage() {
                       onClick={async (e) => {
                         e.stopPropagation();
                         try {
-                          await axios.delete(`http://localhost:5000/search/${item._id}`);
+                          await axios.delete(`/search/${item._id}`);
                           setRecent((prev) => prev.filter((i) => i._id !== item._id));
                         } catch (err) {
                           console.error(err);

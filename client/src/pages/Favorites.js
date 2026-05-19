@@ -15,7 +15,7 @@ function Favorites() {
         return;
       }
 
-      const res = await axios.get("http://localhost:5000/favorites", {
+      const res = await axios.get("/favorites", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setFavorites(res.data);

@@ -16,6 +16,18 @@ const CLOUD_FALLBACKS = [
   { videoId: "fVIsC2O8C1A", title: "Aruna Sairam - Abhangs & Carnatic", channelTitle: "Saregama" }
 ];
 
+// Helper: check if a YouTube video is embeddable using oEmbed endpoint
+async function isEmbeddable(videoId) {
+  if (!videoId) return false;
+  try {
+    const url = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}`;
+    await axios.get(url, { timeout: 3000 });
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
 router.get("/search", async (req, res) => {
   try {
     const { songId, title, composer, raga, artist, album } = req.query;
@@ -27,7 +39,12 @@ router.get("/search", async (req, res) => {
       const jsonCached = findCachedYoutubeInJson(title, composer);
       if (jsonCached) {
         console.log("📦 CACHE HIT (JSON File):", title);
-        return res.json(jsonCached);
+        // Verify embeddability; if it's not embeddable, continue to other strategies
+        if (await isEmbeddable(jsonCached.videoId)) {
+          return res.json(jsonCached);
+        } else {
+          console.warn("⚠️ JSON cache video not embeddable, skipping:", jsonCached.videoId);
+        }
       }
     }
 
@@ -43,9 +60,14 @@ router.get("/search", async (req, res) => {
           thumbnail: cachedVideo.thumbnail,
           channelTitle: cachedVideo.channelTitle
         };
-        // Also persist to JSON so next time it hits the faster file cache
-        if (composer) updateSongInJson(title, composer, result);
-        return res.json(result);
+        // Verify embeddability before returning
+        if (await isEmbeddable(result.videoId)) {
+          // Also persist to JSON so next time it hits the faster file cache
+          if (composer) updateSongInJson(title, composer, result);
+          return res.json(result);
+        } else {
+          console.warn("⚠️ VideoCache DB entry not embeddable, skipping:", result.videoId);
+        }
       }
     } catch (err) { console.error("Video cache error:", err); }
 
@@ -55,9 +77,14 @@ router.get("/search", async (req, res) => {
         const existingSong = await Song.findById(songId);
         if (existingSong && existingSong.youtube && existingSong.youtube.videoId) {
           console.log("📦 CACHE HIT (Local Song DB):", existingSong.title);
-          // Also persist to JSON
-          if (composer) updateSongInJson(title, composer, existingSong.youtube);
-          return res.json(existingSong.youtube);
+          // Verify embeddability before returning
+          if (await isEmbeddable(existingSong.youtube.videoId)) {
+            // Also persist to JSON
+            if (composer) updateSongInJson(title, composer, existingSong.youtube);
+            return res.json(existingSong.youtube);
+          } else {
+            console.warn("⚠️ Local Song document video not embeddable, skipping:", existingSong.youtube.videoId);
+          }
         }
       } catch (err) { console.error("Song cache error:", err); }
     }

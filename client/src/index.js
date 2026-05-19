@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import axios from 'axios';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./App.css";
+
+const defaultBaseURL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : '/';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || defaultBaseURL;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

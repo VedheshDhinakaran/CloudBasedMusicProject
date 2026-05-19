@@ -13,7 +13,7 @@ function SearchBar({ onSearch }) {
   useEffect(() => {
     const fetchRagas = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/songs/meta/ragas");
+        const res = await axios.get("/songs/meta/ragas");
         setRagas(res.data);
       } catch (err) {
         console.error(err);
@@ -26,7 +26,7 @@ function SearchBar({ onSearch }) {
   useEffect(() => {
     const fetchComposers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/songs/meta/composers");
+        const res = await axios.get("/songs/meta/composers");
         setComposers(res.data);
       } catch (err) {
         console.error(err);

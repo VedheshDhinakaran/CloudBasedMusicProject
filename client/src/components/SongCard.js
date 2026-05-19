@@ -20,7 +20,7 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const res = await axios.get("http://localhost:5000/favorites", {
+        const res = await axios.get("/favorites", {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -44,7 +44,7 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
   const addToFavorites = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.post("http://localhost:5000/favorites", {
+      const res = await axios.post("/favorites", {
         songId: song.songId || song._id,
         title: song.title,
         genre: song.genre || "carnatic",
@@ -67,7 +67,7 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
   const removeFromFavorites = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete("http://localhost:5000/favorites", {
+      await axios.delete("/favorites", {
         params: {
           title: song.title,
           genre: song.genre || "carnatic",
@@ -111,7 +111,7 @@ function SongCard({ song, onHistoryUpdate, onPlay, onFavoriteRemoved }) {
                    song.youtube = video;
                 }
 
-                await axios.post("http://localhost:5000/search", {
+                await axios.post("/search", {
                 songId: song._id || song.mbid,
                 title: song.title,
                 raga: song.raga,

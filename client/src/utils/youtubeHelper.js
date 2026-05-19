@@ -7,7 +7,7 @@ export const findBestYoutubeVideo = async (song) => {
   try {
     console.log("🔍 Fetching first YouTube match for:", song.title);
 
-    const res = await axios.get("http://localhost:5000/youtube/search", {
+    const res = await axios.get("/youtube/search", {
       params: {
         songId: song._id || song.id,
         title: song.title,

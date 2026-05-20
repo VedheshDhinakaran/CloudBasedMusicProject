@@ -1,22 +1,23 @@
 const axios = require('axios');
+const logger = require('./logger');
 
 async function testAuth() {
   try {
-    console.log("Testing Signup...");
+    logger.info("Testing Signup...");
     const signupRes = await axios.post('http://localhost:5000/auth/signup', {
       email: `test${Date.now()}@example.com`,
       password: 'password123'
     });
-    console.log("Signup Success:", signupRes.data);
+    logger.info("Signup Success:", signupRes.data);
 
-    console.log("Testing Login...");
+    logger.info("Testing Login...");
     const loginRes = await axios.post('http://localhost:5000/auth/login', {
       email: signupRes.data.email,
       password: 'password123'
     });
-    console.log("Login Success:", loginRes.data);
+    logger.info("Login Success:", loginRes.data);
   } catch (err) {
-    console.error("Test Failed:", err.response?.data || err.message);
+    logger.error("Test Failed:", err.response?.data || err.message);
   }
 }
 

@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const Song = require("../models/Song");
 const VideoCache = require("../models/VideoCache");
 const { updateSongInJson, findCachedYoutubeInJson } = require("../utils/jsonPersistence");
+const logger = require("../logger");
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
@@ -38,12 +39,12 @@ router.get("/search", async (req, res) => {
     if (composer) {
       const jsonCached = findCachedYoutubeInJson(title, composer);
       if (jsonCached) {
-        console.log("📦 CACHE HIT (JSON File):", title);
+        logger.info(` CACHE HIT (JSON File): ${title}`);
         // Verify embeddability; if it's not embeddable, continue to other strategies
         if (await isEmbeddable(jsonCached.videoId)) {
           return res.json(jsonCached);
         } else {
-          console.warn("⚠️ JSON cache video not embeddable, skipping:", jsonCached.videoId);
+          console.warn(" JSON cache video not embeddable, skipping:", jsonCached.videoId);
         }
       }
     }
@@ -53,7 +54,7 @@ router.get("/search", async (req, res) => {
     try {
       const cachedVideo = await VideoCache.findOne({ query: cacheQuery });
       if (cachedVideo) {
-        console.log("📦 CACHE HIT (VideoCache DB):", title);
+        logger.info(` CACHE HIT (VideoCache DB): ${title}`);
         const result = {
           videoId: cachedVideo.videoId,
           title: cachedVideo.title,
@@ -76,14 +77,14 @@ router.get("/search", async (req, res) => {
       try {
         const existingSong = await Song.findById(songId);
         if (existingSong && existingSong.youtube && existingSong.youtube.videoId) {
-          console.log("📦 CACHE HIT (Local Song DB):", existingSong.title);
+          logger.info(` CACHE HIT (Local Song DB): ${existingSong.title}`);
           // Verify embeddability before returning
           if (await isEmbeddable(existingSong.youtube.videoId)) {
             // Also persist to JSON
             if (composer) updateSongInJson(title, composer, existingSong.youtube);
             return res.json(existingSong.youtube);
           } else {
-            console.warn("⚠️ Local Song document video not embeddable, skipping:", existingSong.youtube.videoId);
+            console.warn(" Local Song document video not embeddable, skipping:", existingSong.youtube.videoId);
           }
         }
       } catch (err) { console.error("Song cache error:", err); }
@@ -94,7 +95,7 @@ router.get("/search", async (req, res) => {
 
     try {
         const searchQuery = `${title} ${raga || ""} ${composer || artist || ""} ${album || ""}`.trim();
-        console.log("⚡ YouTube API Search (no cache):", searchQuery);
+        logger.info(` YouTube API Search (no cache): ${searchQuery}`);
 
         const response = await axios.get("https://www.googleapis.com/youtube/v3/search", {
           params: { 
@@ -110,11 +111,11 @@ router.get("/search", async (req, res) => {
         const videos = response.data.items;
         if (videos && videos.length > 0) {
           bestVideo = videos[0];
-          console.log("🎯 Selected First Result | Title:", bestVideo.snippet.title);
+          logger.info(` Selected First Result | Title: ${bestVideo.snippet.title}`);
         }
     } catch (apiErr) {
       if (apiErr.response?.status === 403) {
-        console.error("⛔ YOUTUBE QUOTA EXCEEDED - Using Fallback Music");
+        console.error(" YOUTUBE QUOTA EXCEEDED - Using Fallback Music");
         const fallback = CLOUD_FALLBACKS[Math.floor(Math.random() * CLOUD_FALLBACKS.length)];
         return res.json({
             videoId: fallback.videoId,
@@ -144,14 +145,14 @@ router.get("/search", async (req, res) => {
     // 🚀 6. SAVE TO VIDEO CACHE (MongoDB backup)
     try {
       await VideoCache.create({ query: cacheQuery, ...youtubeData });
-      console.log("💾 Saved to VideoCache DB:", title);
+      logger.info(` Saved to VideoCache DB: ${title}`);
     } catch (err) { console.error("Save to VideoCache failed:", err.message); }
 
     // 🚀 7. SAVE TO LOCAL SONG DOCUMENT (if valid ObjectId)
     if (songId && mongoose.Types.ObjectId.isValid(songId)) {
       try {
         await Song.findByIdAndUpdate(songId, { youtube: youtubeData });
-        console.log("💾 Saved to Song document:", title);
+        logger.info(` Saved to Song document: ${title}`);
       } catch (err) { console.error("Save to Song failed:", err.message); }
     }
 

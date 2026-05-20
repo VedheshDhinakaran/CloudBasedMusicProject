@@ -78,7 +78,8 @@ spec:
               done
       containers:
         - name: backend
-          image: 280734291736.dkr.ecr.us-east-1.amazonaws.com/backend:v1
+          image: 280734291736.dkr.ecr.us-east-1.amazonaws.com/backend:v6
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
@@ -86,6 +87,12 @@ spec:
               value: "5000"
             - name: MONGO_URI
               value: mongodb://mongo:27017/carnaticDB
+            - name: AWS_ACCESS_KEY_ID
+              value: NULL
+            - name: AWS_SECRET_ACCESS_KEY
+              value: NULL
+            - name: AWS_REGION
+              value: "us-east-1"
             - name: YOUTUBE_API_KEY
               valueFrom:
                 secretKeyRef:

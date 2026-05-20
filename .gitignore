@@ -1,1 +1,3 @@
 data/youtube_cache.json
+server_NodeBackend/node_modules
+server_NodeBackend/.env

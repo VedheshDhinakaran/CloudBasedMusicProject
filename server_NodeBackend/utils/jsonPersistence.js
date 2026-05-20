@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const logger = require("../logger");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const CACHE_FILE = path.join(DATA_DIR, "youtube_cache.json");
@@ -14,7 +15,7 @@ function loadCache() {
       return JSON.parse(raw);
     }
   } catch (err) {
-    console.error("❌ Cache load error:", err.message);
+    logger.error(`❌ Cache load error: ${err.message}`);
   }
   return {};
 }
@@ -45,9 +46,9 @@ function updateSongInJson(title, composer, youtubeData) {
       channelTitle: youtubeData.channelTitle
     };
     saveCache(cache);
-    console.log(`📝 CACHE UPDATED: "${title}"`);
+    logger.info(` CACHE UPDATED: "${title}"`);
   } else {
-    console.log(`📦 CACHE ALREADY EXISTS: "${title}"`);
+    logger.info(` CACHE ALREADY EXISTS: "${title}"`);
   }
 }
 

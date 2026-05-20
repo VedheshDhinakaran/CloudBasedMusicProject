@@ -1,13 +1,13 @@
 const { pipeline } = require("@xenova/transformers");
-
+const logger = require("../logger");
 let generator = null;
 
 const initAI = async () => {
     if (!generator) {
-        console.log("🤖 Initializing Local AI (Xenova/Xenova/LLaMA-2-7b)...");
+        logger.info("🤖 Initializing Local AI (Xenova/Xenova/LLaMA-2-7b)...");
         try {
             generator = await pipeline("text-generation", "Xenova/LLaMA-2-7b");
-            console.log("✅ AI Model Ready");
+            logger.info("✅ AI Model Ready");
         } catch (err) {
             console.warn("⚠️  Fallback: Using simple generation mode");
             generator = null;
@@ -45,7 +45,7 @@ Be scholarly yet poetic. Use 2-3 sentences per paragraph.`;
             return generateBasicInsights(song);
         }
 
-        console.log(`🎵 Generating insights for: ${song.title}`);
+        logger.info(`🎵 Generating insights for: ${song.title}`);
         const output = await pipe(prompt, {
             max_new_tokens: 250,
             temperature: 0.7,

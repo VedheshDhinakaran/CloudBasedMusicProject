@@ -2,6 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 const Song = require("../models/Song");
+const logger = require("../logger");
 
 require("dotenv").config({ path: path.join(__dirname, "../.env") });
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/carnaticDB";
@@ -9,7 +10,7 @@ const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/carnaticDB
 async function importData() {
   try {
     await mongoose.connect(MONGO_URI);
-    console.log("MongoDB Connected");
+    logger.info("MongoDB Connected");
 
     const syamaPath = path.join(__dirname, "syama_shastri_songs.json");
     const dikshitarPath = path.join(__dirname, "muthuswamy_dikshitar_songs.json");
@@ -37,12 +38,12 @@ async function importData() {
     }));
 
     await Song.deleteMany();
-    console.log("Old data cleared");
+    logger.info("Old data cleared");
 
     const allSongs = [...syamaWithComposer, ...dikshitarWithComposer, ...popSongs];
     await Song.insertMany(allSongs);
 
-    console.log(`Imported ${allSongs.length} songs into MongoDB.`);
+    logger.info(`Imported ${allSongs.length} songs into MongoDB.`);
     await mongoose.connection.close();
     process.exit(0);
   } catch (err) {

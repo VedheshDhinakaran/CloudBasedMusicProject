@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
+const logger = require("./logger");
+logger.info("CLOUDWATCH TEST LOG");
+console.log("CLOUDWATCH TEST LOG");
+
 // ✅ create app FIRST
 const app = express();
 
@@ -11,8 +15,8 @@ app.use(express.json());
 // ✅ connect DB
 const mongoUri = process.env.MONGO_URI || "mongodb://localhost:27017/carnaticDB";
 mongoose.connect(mongoUri)
-  .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log("MongoDB Connection Error:", err.message));
+  .then(() => logger.info("MongoDB Connected"))
+  .catch(err => logger.error("MongoDB Connection Error:", err.message));
 
 // ✅ import routes AFTER app is created
 const songRoutes = require("./routes/songRoutes");
@@ -39,5 +43,5 @@ app.use("/auth", authRoutes);
 // ✅ start server
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  logger.info(`Server running on port ${port}`);
 });

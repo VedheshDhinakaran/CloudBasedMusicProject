@@ -78,7 +78,7 @@ spec:
               done
       containers:
         - name: backend
-          image: music-backend:latest
+          image: 280734291736.dkr.ecr.us-east-1.amazonaws.com/backend:v1
           ports:
             - containerPort: 5000
           env:
@@ -125,7 +125,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: music-frontend:latest
+          image: 280734291736.dkr.ecr.us-east-1.amazonaws.com/frontend:v1
           ports:
             - containerPort: 80
 ---
